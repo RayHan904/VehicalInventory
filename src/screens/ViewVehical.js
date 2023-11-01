@@ -66,7 +66,7 @@ const ViewVehical = () => {
         toast.error("Oops! Something went wrong!");
         setIsLoading(false);
       });
-  });
+  }, [vehicalID]);
 
   return (
     <>
