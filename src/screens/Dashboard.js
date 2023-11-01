@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "../components/Loader";
 import { toast } from "react-toastify";
-import { async } from "q";
 
 const Dashboard = () => {
   const [data, setData] = useState([]);

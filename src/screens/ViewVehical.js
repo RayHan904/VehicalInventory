@@ -35,7 +35,7 @@ const ViewVehical = () => {
         .put(BASE_URL + VEHICALS_URL + "/" + vehicalID, formData)
         .then((response) => {
           console.log("THIS is form DATA", formData);
-          console.log("Vehical data Added:", response.data);
+          console.log("Vehical data Added:", response?.data);
         });
       toast.success("Vehical added successfully");
       navigate("/");
@@ -49,7 +49,7 @@ const ViewVehical = () => {
     axios
       .get(BASE_URL + VEHICALS_URL + "/" + vehicalID)
       .then((response) => {
-        let data = response.data;
+        let data = response?.data;
         console.log(data);
 
         if (data) {
@@ -66,7 +66,7 @@ const ViewVehical = () => {
         toast.error("Oops! Something went wrong!");
         setIsLoading(false);
       });
-  }, []);
+  });
 
   return (
     <>

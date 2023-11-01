@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
-import Loader from "../components/Loader";
 import FormContainer from "../components/FormContainer";
 import { toast } from "react-toastify";
-import { useParams } from "react-router-dom";
 import axios from "axios";
 import { BASE_URL, VEHICALS_URL } from "../constants";
 
