@@ -13,8 +13,13 @@ import {
 
 const Barchart = ({ data }) => {
   return (
-    <div className="barchartContainer">
-      <ResponsiveContainer className="myBarChart" width="50%" height="100%">
+    <div className="barchart-container">
+      <ResponsiveContainer
+        className="myBarChart"
+        width="50%"
+        minWidth="22rem"
+        height="100%"
+      >
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="2 2" />
           <XAxis dataKey="name" />

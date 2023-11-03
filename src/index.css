@@ -23,7 +23,7 @@ main {
   white-space: nowrap; /* Prevent wrapping */
 }
 
-.barchartContainer {
+.barchart-container {
   display: flex;
   justify-content: center;
   height: 30rem;
@@ -34,7 +34,11 @@ main {
   margin-bottom: 1rem;
 }
 
-.actionBtns {
+.action-btns {
   display: flex;
   justify-content: space-around;
+}
+
+.table-responsive {
+  overflow-x: auto;
 }

@@ -19,8 +19,9 @@ const VehicalTable = ({ tableData, handleDelete }) => {
 
     setFilteredData(filtered);
   };
+
   return (
-    <>
+    <div className="table-responsive">
       <input
         type="text"
         placeholder="Search..."
@@ -36,7 +37,7 @@ const VehicalTable = ({ tableData, handleDelete }) => {
       >
         Search
       </Button>
-      <Table striped bordered hover className="my-table">
+      <Table responsive striped bordered hover className="my-table">
         <thead>
           <tr>
             <th>No</th>
@@ -45,7 +46,7 @@ const VehicalTable = ({ tableData, handleDelete }) => {
             <th>Year</th>
             <th>Price</th>
             <th>Status</th>
-            <th> Action</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -57,10 +58,10 @@ const VehicalTable = ({ tableData, handleDelete }) => {
               <td>{data.year}</td>
               <td>{data.price}</td>
               <td>{data.isSold ? "Sold" : "Live"}</td>
-              <td className="actionBtns">
+              <td className="action-btns">
                 <Link to={`/view/${data._id}`}>
                   <Button>
-                    <AiFillEdit /> / <AiFillEye />
+                    <AiFillEdit />
                   </Button>
                 </Link>
                 <Button variant="danger" onClick={() => handleDelete(data._id)}>
@@ -71,7 +72,7 @@ const VehicalTable = ({ tableData, handleDelete }) => {
           ))}
         </tbody>
       </Table>
-    </>
+    </div>
   );
 };
 
