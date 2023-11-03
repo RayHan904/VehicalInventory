@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AiFillEye, AiFillEdit } from "react-icons/ai";
+import { AiFillEdit } from "react-icons/ai";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 
 import { Button, Table } from "react-bootstrap";
